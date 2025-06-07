@@ -19,7 +19,7 @@ So in terms of layout and size, I've decided to stick to a QWERTY layout (boring
 
 I got into Keyboard Layout Editor, to do up a quick visual of what I have in mind. It'll look something like this.
 
-![alt text](images/annotated_layout.jpg)
+![](images/annotated_layout.jpg)
 
 I've added a special Zeta key which will used to trigger a layer for the Pomodoro timer and other keyboard related actions.
 
@@ -30,7 +30,7 @@ I've gotta start looking for some parts now...
 ## 5th of June: Part Sourcing.
 This morning, I showed my design to a friend, and he made some suggestions which I've added into my KLE design;
 
-![alt text](images/updated_layout.jpg)
+![](images/updated_layout.jpg)
 
 I've basically just shifted some keys around to make sure the main letter keys are centered and the other keys go around, while still leaving space for the rotary encoders and Pomodoro timer.
 
@@ -38,4 +38,28 @@ In total, I've got 61 keys, and the Capslock, Enter, Shift and Space keys will n
 
 I'm also not too sure about the MCU I'm going to use - from what I've heard, Nice!Nano is pretty good, but there's one small problem; it only has 21 GPIO pins, and I need a good amount more, for my 7-segment display and rotary encoders (I'll be having 4 of those in total).
 
-In total I need 19 GPIO for my switches, 2 GPIO for my display and another 4 for the buttons on the rotary encoders (I'll be wiring)
+## 7th of June: Still on the design.
+After asking around on Slack and doing my own research, I really started questioning the feasibility of the keyboard I've designed so far. I had completely forgot to account for how many pins I'd be using and the actual size of the keycaps; for some reason, my current design features keys of really weird lengths (like a 4.25u spacebar instead of the standard 6.25u). I've hence decided to completely start from scratch on the design of the keyboard, with two main aims in mind;
+
+1. Don't stray too far away from the conventional layout (I don't want to have to adapt to a weird custom layout I won't use anywhere else.)
+
+2. Try to maximise functionality within a smaller amount of keys/rotary encoders (eg. instead of 4 encoders, use 2)
+
+So, with these two goals in mind, here's my improved design.
+
+![](images/improved_layout.jpg)
+
+This design makes sure I have all essentials and while it doesn't have the arrow keys, it allows me to leave space in the top left corner for a seven segment display (the TM1637) and two rotary encoders on the bottom right.
+
+In total, without implementing any optimised arrangments in my schematic, I'll need the following amount of GPIO pins;
+
+- 18 pins for the switch matrix (5*13)
+- 2 for TM1637
+- 4 for EC11 encoders (I'll wire the switch parts into the switch matrix)
+- 1 for neopixel for RGB
+
+Total: 25
+
+Luckily, the Raspberry Pi Pico 2W has 26 GPIO pins, and would leave one spare if I were to use it for my keyboard.
+
+And my keyboard will also have a total of 56 keys - which means 56 switches.
