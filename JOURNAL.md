@@ -38,6 +38,8 @@ In total, I've got 61 keys, and the Capslock, Enter, Shift and Space keys will n
 
 I'm also not too sure about the MCU I'm going to use - from what I've heard, Nice!Nano is pretty good, but there's one small problem; it only has 21 GPIO pins, and I need a good amount more, for my 7-segment display and rotary encoders (I'll be having 4 of those in total).
 
+**Total time spent:** 2h
+
 ## 7th of June: Still on the design.
 After asking around on Slack and doing my own research, I really started questioning the feasibility of the keyboard I've designed so far. I had completely forgot to account for how many pins I'd be using and the actual size of the keycaps; for some reason, my current design features keys of really weird lengths (like a 4.25u spacebar instead of the standard 6.25u). I've hence decided to completely start from scratch on the design of the keyboard, with two main aims in mind;
 
@@ -62,4 +64,29 @@ Total: 25
 
 Luckily, the Raspberry Pi Pico 2W has 26 GPIO pins, and would leave one spare if I were to use it for my keyboard.
 
+![](images/pico_2W_pinout.svg)
+
 And my keyboard will also have a total of 56 keys - which means 56 switches.
+
+**Total time spent:** 3h
+
+## 8th of June: Starting the schematic.
+I've basically almost finished my BOM, and the only parts I don't have on it yet are the PCB, and the switch stabilisers, which I'll decide on once I'm further into the project.
+
+Most of the schematic was very repetitive, as I had to wire up my keyboard matrix first, and then another massive bundle of SK6812 neopixel LEDs.
+
+My keyboard matrix (with the rotary encoder switches as I had talked about before):
+
+![](images/keyboard_matrix_08_Jun.png)
+
+The neopixel matrix so far;
+
+![](images/neopixels_08_Jun.png)
+
+Since I want to use the TM1637 display module and not just the display with a TON of pins - I had to make my own symbol for it and I found that easier than expected.
+
+![](images/TM1637_custom.png)
+
+I put up my schematic for review on Slack and got some feedback about the neopixel wiring - I'll work on that tommorow. The only other part I've really got left is the Pimroni LiPo Shim for the Pico - I'll probably have to do what I did for the TM1637 Module and make my own symbol, but I'll get back to it later. 
+
+**Total time spent:** 2.75h

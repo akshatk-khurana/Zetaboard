@@ -1,8 +1,12 @@
 Item,Quantity,Cost per piece(AUD),Link
 Raspberry Pi Pico 2W,1,$12.83,https://littlebirdelectronics.com.au/products/raspberry-pi-pico-2w
 Blank Red PBT Keycaps Set,1,$34.84,https://www.amazon.com.au/Profile-Keycaps-Switches-Mechanical-Keyboard/dp/B06X1BJW3S?dib=eyJ2IjoiMSJ9.addXzl7CHRV17J-tE3NtRxaNoimZZfjUucnYjjYm0P_uV5Ish9_cAm2B028_8qgy0Rf2_3ExJ-GEZ5WV3RIlm895h-V0RlWk5uCBefcmuwIHwftaY50DJ8La_mppCug64prJmcx6O-XQ2uAyHUSmu_-vAgAYPxR722RrBNQuGtbp18DohXg_NMrk42VjXYkcmVMN8D7UK4PmxxjGDjRTG5Oam8-d4O1TB2bzOMEqDIx25kFPgaL1yTqvIKNS3g2KkdUj553MKDZVnbSL9jsRTFXaYi1XBWCWCNCfbiq6AOY.YPxnIkxiCRJWyxzIZ8vw9Ta8mqZ_RwB8--jhBvFwiGw&dib_tag=se&keywords=Red%2BKeycaps%2B104%2BBlank%2BThick%2BPBT%2BOEM%2BProfile%2BANSI%2BKeycap&qid=1749297604&sr=8-8&th=1
-Cherry MX Brown Switch Set 15pcs,4,$24, https://epomaker.au/products/cherry-mx-switch-set?variant=44517694112054
-TM1637 4 Digit 7 Segment Display,1,$2.05, https://core-electronics.com.au/7-segment-display-2-wire.html
-EC11 Rotary Encoder,2,$7.91, https://www.digikey.com.au/en/products/detail/alps-alpine/EC11E18244AU/19529126
-SK6812 Neopixel LEDs 50pcs,1,$13.56,https://www.amazon.com.au/Mellisso-Similar-WS2812B-Individually-Addressable/dp/B0D7Q94S9S
+Cherry MX Brown Switch Set 15pcs,4,$24,https://epomaker.au/products/cherry-mx-switch-set?variant=44517694112054
+TM1637 4 Digit 7 Segment Display,1,$2.05,https://core-electronics.com.au/7-segment-display-2-wire.html
+EC11 Rotary Encoder,2,$7.91,https://www.digikey.com.au/en/products/detail/alps-alpine/EC11E18244AU/19529126
+SK6812 Mini-E Neopixel LEDs 50pcs,2,$13.56,https://www.amazon.com.au/Mellisso-Similar-WS2812B-Individually-Addressable/dp/B0D7Q94S9S
 1N4148 Through Hole Diodes,56,$0.075,https://www.digikey.com.au/en/products/detail/vishay-general-semiconductor-diodes-division/1N4148-TAP/3104053
+MX Hotswap Sockets 110pcs,1,$35.66,https://www.amazon.com.au/DUROCK-Mechanical-Keyboard-Switches-Hot-Swap/dp/B0B4W9YMGM?th=1
+3.7V 3000mAh LiPo Battery,1,$27,https://www.amazon.com.au/3000mAh-103665-Rechargeable-Replacement-Electronic/dp/B091Y3TW9F?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A29XPEKPHM1MCP
+Pimroni LiPo SHIM for Pico,1,$17.10,https://core-electronics.com.au/pimoroni-lipo-shim-for-pico.html
+Total,$272.62
