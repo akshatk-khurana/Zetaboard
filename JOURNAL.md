@@ -90,3 +90,22 @@ Since I want to use the TM1637 display module and not just the display with a TO
 I put up my schematic for review on Slack and got some feedback about the neopixel wiring - I'll work on that tommorow. The only other part I've really got left is the Pimroni LiPo Shim for the Pico - I'll probably have to do what I did for the TM1637 Module and make my own symbol, but I'll get back to it later. 
 
 **Total time spent:** 2.75h
+
+## 9th of June: Finishing the schematic.
+I fixed up the neopixel wiring and added the capacitors. I've also realised that I'm not going to include the LiPo Shim for Pico onto the actual PCB, I'll just solder it onto the Pi Pico 2W (as shown in this [video](https://www.youtube.com/watch?v=wPQf_Pz0APA)) and then solder that onto the PCB.
+
+My finished schematic:
+
+![](images/complete_schematic_09_Jun.png)
+
+I had to make a custom footprint for the TM1637 Display - to be honest, I really just made a square and added four pads so I can just have the display angled slightly upwards in the actual case.
+
+My custom footprint for the TM1637 Display (not very exact):
+
+![](images/TM1637_footprint.png)
+
+So far, I've arranged up all my keys in the PCB, but I'm still not too sure what to do with the neopixels and the decoupling capacitors. I've posted for help on Slack and I'm awaiting a response.
+
+![](images/PCB_10_Jun.png)
+
+**Total time spent:** 4.25h
