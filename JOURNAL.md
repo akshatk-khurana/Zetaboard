@@ -1,7 +1,7 @@
 ---
 title: "Zetaboard"
 author: "Akshat Khurana"
-description: "An ergonomic, wireless and productivity optimised 65% keyboard!"
+description: "A wired productivity optimised 65% keyboard with per-key RGB lighting and a Pomodoro timer!"
 created_at: "2024-06-04"
 ---
 
@@ -106,6 +106,25 @@ My custom footprint for the TM1637 Display (not very exact):
 
 So far, I've arranged up all my keys in the PCB, but I'm still not too sure what to do with the neopixels and the decoupling capacitors. I've posted for help on Slack and I'm awaiting a response.
 
-![](images/PCB_10_Jun.png)
+![](images/PCB_09_Jun.png)
 
 **Total time spent:** 4.25h
+
+## 11th of June:
+After not being able to work on the project yesterday (as I was waiting for responses on several things I was confused about); I was able to place the neopixels on my PCB today; aside from that, I just have the capacitors left. However, as I've decided to keep my keyboard wired, since making it wireless is definitely not something a beginner new to keyboard PCB design should do (first thing I saw on the Keyboard Atelier discord), I don't really have to worry about capacitors as the current will be moderated by the computer I plug it into. On top of that, I also removed the two extra neopixels I'd thought could be used for the two rotary encoders (unfortunately, there is no space in or around them to put the neopixels). My updated schematic now looks like:
+
+![](images/schematic_11_Jun.png)
+
+For some reason the 3D models also don't seem to be loading - I have to go in to the footprint editor for each of the keyswitches and add in the model every single time and most of the time it just doesn't seem to save, let alone show in the 3D viewer. 
+
+Ok. So I've finally managed to assign a 3D model to all of the switches and they all show in the 3D viewer, which will be great for when I design the case. Currently, the 3D view for my PCB looks something like this:
+
+![](images/3DPCB_11_Jun.png)
+
+I also managed to wire together a good chunk of my PCB, but I'm running into another problem - its getting too messy and I still have most of the neopixels to wire up. 
+
+![](images/PCB_11_Jun.png)
+
+That's it for today, but tomorrow I think I might have to look at ways to improve my traces so that I can actual route all the components without having to use a TON of vias.
+
+**Total time spent:** 3.25h
