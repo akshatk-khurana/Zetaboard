@@ -128,3 +128,27 @@ I also managed to wire together a good chunk of my PCB, but I'm running into ano
 That's it for today, but tomorrow I think I might have to look at ways to improve my traces so that I can actual route all the components without having to use a TON of vias.
 
 **Total time spent:** 3.25h
+
+
+## 15th of June:
+I finally managed to finish the massive tasks of re-routing my PCB and using zone fills on the GND and 5V+ pins to make sure all components were connected. Even though my PCB is *really* messy and a good amount of vias, I was happy that everything was connected. I put up a screenshot of my completed PCB in #electronics on Slack for a review before I move on to designing a case; and I'm currently awaiting responses to some of my questions on that thread. Once I'm done and have some spare time left, I want to add a silkscreen design in the space on the bottom left (under the Pico).
+
+Current PCB progress:
+
+![](images/PCB_15_Jun.png)
+
+![](images/3DPCB_15_Jun.png)
+
+Apart from that, there are a few other problems I need to tackle, including:
+
+- The TM1637 module will exceed the space I've alloted it on the PCB (the actualy display itself isn't that big, but the IC surrounding it is)
+
+- About 4 of my keys need stabilisers and I need to account for them somehow.
+
+While I haven't exactly started my case yet (I want to do a few concept sketches first), I uses the JSON data from KLE and put it into ai03's plate generator so I could at least have the plate ready and customised for the other parts on the PCB (encoders, TM1637). Here's what I've gotten in OnShape so far:
+
+![](images/plate.png)
+
+Thankfully, the plate generator added in slots for the stabilisers to go in and after watching Joe Scotto's video on designing mechanical keyboard cases; I adjusted the extrusion for these stabiliser holes in order to ensure that the stabilisers would fit when mounted onto the plate.
+
+**Total time spent:** 3.5h
