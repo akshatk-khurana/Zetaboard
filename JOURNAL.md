@@ -131,7 +131,7 @@ That's it for today, but tomorrow I think I might have to look at ways to improv
 
 
 ## 15th of June:
-I finally managed to finish the massive tasks of re-routing my PCB and using zone fills on the GND and 5V+ pins to make sure all components were connected. Even though my PCB is *really* messy and a good amount of vias, I was happy that everything was connected. I put up a screenshot of my completed PCB in #electronics on Slack for a review before I move on to designing a case; and I'm currently awaiting responses to some of my questions on that thread. Once I'm done and have some spare time left, I want to add a silkscreen design in the space on the bottom left (under the Pico).
+I finally managed to finish the massive task of re-routing my PCB and using zone fills on the GND and 5V+ pins to make sure all components were connected. Even though my PCB is *really* messy and a good amount of vias, I was happy that everything was connected. I put up a screenshot of my completed PCB in #electronics on Slack for a review before I move on to designing a case; and I'm currently awaiting responses to some of my questions on that thread. Once I'm done and have some spare time left, I want to add a silkscreen design in the space on the bottom left (under the Pico).
 
 Current PCB progress:
 
@@ -152,3 +152,16 @@ While I haven't exactly started my case yet (I want to do a few concept sketches
 Thankfully, the plate generator added in slots for the stabilisers to go in and after watching Joe Scotto's video on designing mechanical keyboard cases; I adjusted the extrusion for these stabiliser holes in order to ensure that the stabilisers would fit when mounted onto the plate.
 
 **Total time spent:** 3.5h
+
+## 17th and 18th of June:
+I spent a considerable amount of time both today and yesterday designing my case. I though this would be easier than designing the PCB, but it was equally frustrating as there were many times that OnShape decided to throw some sort of an error or simply not do actions the way I was intending to. Initially, I also had a little bit of trouble importing the PCB step file, and had to even switch browsers to reduce the amount of lag I was experiencing while moving parts. 
+
+I used the already prepared plate and extruded all the required holes in it (for M2 Screws) and with the help of Joe Scotto's tutorial (after watching it about 5 or so times), I managed to countersink my screws at the bottom of the case as well. I added a little holder for the TM1637 display onto the plate as well and this was quite tough to accommodate as since the display is itself a small PCB, the circuitry around it takes a significant amount of area (much more than the display). Here's the finished plate:
+
+![](images/plate_finished.png)
+
+After finishing the plate, the case was pretty straightforward and didn't take too long. I made sure to chamfer all the case edges to give it a more refined look (similar to my Keychron K2). On top of this, to add a more ergonomic tilt and avoid having to type on a completely flat keyboard, I added an incline to the case by using a triangle angled at about 8 degrees negative tilt (seemed to be the best according to the Internet). Rather than chamfering this bottom bit, I chose to use the fillet as it is more gentle and gradual. To top it all off, I extruded in some text on the bottom left edges of the case:
+
+![](images/case_finished.png)
+
+**Total time spent:** 6h
